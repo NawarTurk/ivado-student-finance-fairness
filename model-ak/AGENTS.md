@@ -46,3 +46,8 @@ all applicants to get a qualification score `q`.
   number look better.
 - Print the numbers listed in each task so results can be checked without
   reading all the code.\*\*\*\*
+- Environment: verify the venv's Python version before running notebooks.
+  The baseline has a saved kernel error under Python 3.14; the challenge
+  targets 3.10+. If a package fails to install, report it rather than
+  working around it with a different library.
+- baseline_model_en.ipynb is a translated version of the starter notebook where markdown cells have been translated but code cells are not.
