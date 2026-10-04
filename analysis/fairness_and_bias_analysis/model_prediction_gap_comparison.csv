@@ -1,0 +1,22 @@
+fairness_rank,model,feature_set,top_percent,center_selection_rate_pct,remote_selection_rate_pct,center_minus_remote_gap_pp,absolute_gap_pp,run
+1,Logistic Regression,Feature set 6,40.00,40.01,39.99,0.02,0.02,logistic_regression/feature_set_6/logistic_regression_feature_set_6_predictions
+2,Logistic Regression,Feature set 1,37.00,37.39,36.43,0.97,0.97,logistic_regression/budget_testing/logistic_regression_feature_set_1_budget_37pct_predictions
+3,Logistic Regression,Feature set 1,40.00,39.54,40.66,-1.12,1.12,logistic_regression/feature_set_1/logistic_regression_feature_set_1_predictions
+4,Logistic Regression,Feature set 4,40.00,39.21,41.15,-1.95,1.95,logistic_regression/feature_set_4/logistic_regression_feature_set_4_predictions
+5,Logistic Regression,Feature set 1,38.00,38.87,36.73,2.14,2.14,logistic_regression/budget_testing/logistic_regression_feature_set_1_budget_38pct_predictions
+6,Random Forest,Feature set 1,40.00,39.08,41.34,-2.26,2.26,random_forest/feature_set_1/random_forest_feature_set_1_predictions
+6,Xgboost,Feature set 1,40.00,39.08,41.34,-2.26,2.26,xgboost/feature_set_1/xgboost_feature_set_1_predictions
+8,Logistic Regression,Feature set 2,40.00,38.87,41.65,-2.78,2.78,logistic_regression/feature_set_2/logistic_regression_feature_set_2_predictions
+9,Logistic Regression,Rank by qualified (feature set unspecified),38.00,36.76,39.80,-3.04,3.04,logistic_regression/rank_by_qualified/rank_by_qualified_score_budget_38pct_predictions
+10,Logistic Regression,Feature set 1,39.00,40.56,36.73,3.82,3.82,logistic_regression/budget_testing/logistic_regression_feature_set_1_budget_39pct_predictions
+11,Logistic Regression,Feature set 1,43.00,44.60,40.66,3.94,3.94,logistic_regression/budget_testing/logistic_regression_feature_set_1_budget_43pct_predictions
+12,Xgboost,Feature set 2,40.00,41.78,37.41,4.37,4.37,xgboost/feature_set_2/xgboost_feature_set_2_predictions
+13,Logistic Regression,Feature set 1,37.00,39.71,33.05,6.67,6.67,logistic_regression/rank_by_qualified/logistic_regression_feature_set_1_rank_by_qualified_budget_37pct_predictions
+14,Logistic Regression,Feature set 5,40.00,42.79,35.93,6.86,6.86,logistic_regression/feature_set_5/logistic_regression_feature_set_5_predictions
+14,Logistic Regression,Feature set 1,40.00,42.79,35.93,6.86,6.86,logistic_regression/rank_by_qualified/logistic_regression_feature_set_1_rank_by_qualified_budget_40pct_predictions
+14,Xgboost,Feature set 3,40.00,42.79,35.93,6.86,6.86,xgboost/feature_set_3/xgboost_feature_set_3_predictions
+17,Logistic Regression,Feature set 1,40.00,42.83,35.87,6.96,6.96,logistic_regression/feature_set_1/logistic_regression_feature_set_1_no_fairness_predictions
+18,Xgboost,Feature set 1,38.00,41.40,33.05,8.35,8.35,xgboost/rank_by_qualified/xgboost_feature_set_1_rank_by_qualified_budget_38pct_predictions
+19,Random Forest,Feature set 2,40.00,43.80,34.46,9.34,9.34,random_forest/feature_set_2/random_forest_feature_set_2_predictions
+20,Logistic Regression,Feature set 3,40.00,44.06,34.09,9.96,9.96,logistic_regression/feature_set_3/logistic_regression_feature_set_3_predictions
+21,Random Forest,Feature set 3,40.00,44.77,33.05,11.73,11.73,random_forest/feature_set_3/random_forest_feature_set_3_predictions
