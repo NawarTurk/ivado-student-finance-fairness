@@ -1,0 +1,168 @@
+{
+  "seed": 42,
+  "l2_penalty": 1.0,
+  "reference_income": 61834.0,
+  "training_features": [
+    "cote_r_equivalent",
+    "revenu_familial_estime",
+    "heures_travail_semaine",
+    "remote_indicator"
+  ],
+  "ranking_features": [
+    "cote_r_equivalent",
+    "heures_travail_semaine"
+  ],
+  "raw_coefficients": {
+    "R_per_point": 1.3616892955411508,
+    "hours_per_hour": 0.19554635565106115,
+    "income_per_10000": 0.2338137402997882,
+    "remote_log_odds": -1.9685769839382894
+  },
+  "solver_gradient_max": 1.2340387378628748e-08,
+  "equivalent_R_score_per_work_hour": 0.1436057082121284,
+  "fairness_adjustment_changes_vs_global_top_k": 0,
+  "allocation": {
+    "budget": 0.4,
+    "eo_tolerance": 0.01,
+    "soft_eo_gap": 0.0035613017497334587,
+    "soft_tpr_centre": 0.792377049469705,
+    "soft_tpr_remote": 0.7959383512194385,
+    "centre_grant_rate": 0.40008431703204045,
+    "remote_grant_rate": 0.3998771498771499,
+    "demographic_parity_gap": 0.00020716715489055293,
+    "expected_agreement_under_q": 0.8700695115609645
+  },
+  "historical_cv": [
+    {
+      "variant": "r_only",
+      "historical_log_loss": 0.3189890156629737,
+      "historical_auc": 0.9335513635087996,
+      "historical_accuracy": 0.8571
+    },
+    {
+      "variant": "r_hours",
+      "historical_log_loss": 0.3184980920968985,
+      "historical_auc": 0.9337908586155957,
+      "historical_accuracy": 0.8567
+    },
+    {
+      "variant": "adjusted",
+      "historical_log_loss": 0.26053952291833826,
+      "historical_auc": 0.9565103566105069,
+      "historical_accuracy": 0.8861
+    },
+    {
+      "variant": "adjusted_interactions",
+      "historical_log_loss": 0.26040169598462753,
+      "historical_auc": 0.9565679271487985,
+      "historical_accuracy": 0.8854
+    },
+    {
+      "variant": "adjusted_extras",
+      "historical_log_loss": 0.2612890142464949,
+      "historical_auc": 0.9562241714219681,
+      "historical_accuracy": 0.8859
+    }
+  ],
+  "coefficient_stability": [
+    {
+      "fold": 0,
+      "R_per_point": 1.355031443382188,
+      "hours_per_hour": 0.19555068053407088,
+      "income_per_10000": 0.23449097092966686,
+      "remote_log_odds": -1.9515990173463627
+    },
+    {
+      "fold": 1,
+      "R_per_point": 1.3699698571386356,
+      "hours_per_hour": 0.20076272026992298,
+      "income_per_10000": 0.23803537240411196,
+      "remote_log_odds": -2.00902875426794
+    },
+    {
+      "fold": 2,
+      "R_per_point": 1.3363114547053174,
+      "hours_per_hour": 0.184118187124509,
+      "income_per_10000": 0.2230808443144281,
+      "remote_log_odds": -1.9010703377946774
+    },
+    {
+      "fold": 3,
+      "R_per_point": 1.3731965751194877,
+      "hours_per_hour": 0.19803354430196182,
+      "income_per_10000": 0.24158636071880973,
+      "remote_log_odds": -1.968947307963641
+    },
+    {
+      "fold": 4,
+      "R_per_point": 1.3591749513219822,
+      "hours_per_hour": 0.19608666625872362,
+      "income_per_10000": 0.23014066500697802,
+      "remote_log_odds": -1.976053260055676
+    }
+  ],
+  "reference_income_sensitivity": [
+    {
+      "reference_income_quantile": 0.25,
+      "reference_income": 45546.0,
+      "changed_vs_primary": 0,
+      "budget": 0.4,
+      "eo_tolerance": 0.01,
+      "soft_eo_gap": 0.00390866193631334,
+      "soft_tpr_centre": 0.8250270265111836,
+      "soft_tpr_remote": 0.828935688447497,
+      "centre_grant_rate": 0.40008431703204045,
+      "remote_grant_rate": 0.3998771498771499,
+      "demographic_parity_gap": 0.00020716715489055293,
+      "expected_agreement_under_q": 0.8789024310683653
+    },
+    {
+      "reference_income_quantile": 0.5,
+      "reference_income": 61834.0,
+      "changed_vs_primary": 0,
+      "budget": 0.4,
+      "eo_tolerance": 0.01,
+      "soft_eo_gap": 0.0035613017497334587,
+      "soft_tpr_centre": 0.792377049469705,
+      "soft_tpr_remote": 0.7959383512194385,
+      "centre_grant_rate": 0.40008431703204045,
+      "remote_grant_rate": 0.3998771498771499,
+      "demographic_parity_gap": 0.00020716715489055293,
+      "expected_agreement_under_q": 0.8700695115609645
+    },
+    {
+      "reference_income_quantile": 0.75,
+      "reference_income": 84140.0,
+      "changed_vs_primary": 0,
+      "budget": 0.4,
+      "eo_tolerance": 0.01,
+      "soft_eo_gap": 0.002713363691003612,
+      "soft_tpr_centre": 0.7462428299638638,
+      "soft_tpr_remote": 0.7489561936548674,
+      "centre_grant_rate": 0.40008431703204045,
+      "remote_grant_rate": 0.3998771498771499,
+      "demographic_parity_gap": 0.00020716715489055293,
+      "expected_agreement_under_q": 0.8496535048958691
+    }
+  ],
+  "changed_vs_baseline": 192,
+  "added_vs_baseline": 96,
+  "removed_vs_baseline": 96,
+  "baseline_centre_grant_rate": 0.3954468802698145,
+  "baseline_remote_grant_rate": 0.40663390663390664,
+  "hidden_reference_accuracy": null,
+  "hidden_reference_equal_opportunity": null,
+  "sha256": {
+    "equialgo-participants/data/donnees_demandes.csv": "a3ce4e56b691daa163e3a455a88e76f85e3a1c8e201293fd3a87516b163c1f6d",
+    "equialgo-participants/data/candidats_evaluation.csv": "5e6f1fdca94fea5417984fa035c05e1b579ea09b3427a4e0f005a769618eb4a7",
+    "models/logistic_regression/feature_set_1/logistic_regression_feature_set_1_predictions.csv": "9a4bb1bbd625f9d4edf3509d9e26fd9c62683e3598b16be896d0f0d94d324bc8",
+    "models/logistic_regression/feature_set_6/logistic_regression_feature_set_6_predictions.csv": "0120f838852cf652c01bcee39ee0ef453d2591a4b5394d033a506b4d48de18c6"
+  },
+  "limitations": [
+    "Regional adjustment assumes a shared additive score with a regional intercept penalty.",
+    "Holding income fixed removes its direct historical preference, not every income proxy.",
+    "Positive work-hour effect is assumed legitimate; hidden qualification may differ.",
+    "Soft EO and expected agreement use model-estimated qualification, not hidden labels.",
+    "Historical-label CV diagnoses the committee model and cannot establish leaderboard improvement."
+  ]
+}
