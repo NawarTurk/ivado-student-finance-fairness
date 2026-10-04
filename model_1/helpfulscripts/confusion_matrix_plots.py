@@ -33,66 +33,20 @@ def compute_matrix(df: pd.DataFrame) -> pd.DataFrame:
     return matrix.reindex(index=[0, 1], columns=[0, 1], fill_value=0)
 
 
-def build_group_stats_row(df: pd.DataFrame) -> dict:
-    """Return a single row of fairness metrics for one group."""
-    total = len(df)
-    qualified_total = int((df["qualified_proxy"] == 1).sum())
-    non_qualified_total = int((df["qualified_proxy"] == 0).sum())
-    granted_among_qualified = int(
-        ((df["qualified_proxy"] == 1) & (df["decision_octroi"] == 1)).sum()
-    )
-    granted_among_non_qualified = int(
-        ((df["qualified_proxy"] == 0) & (df["decision_octroi"] == 1)).sum()
-    )
-
-    qualified_share = (qualified_total / total * 100) if total else 0.0
-    grant_share_over_all = ((granted_among_qualified + granted_among_non_qualified) / total * 100) if total else 0.0
-    qualified_and_granted_share = (granted_among_qualified / total * 100) if total else 0.0
-    grant_if_qualified = (granted_among_qualified / qualified_total * 100) if qualified_total else 0.0
-    grant_if_non_qualified = (granted_among_non_qualified / non_qualified_total * 100) if non_qualified_total else 0.0
-
-    return {
-        "group": "",
-        "% qualified / all": qualified_share,
-        "% granted / all": grant_share_over_all,
-        "% qualified and granted / all": qualified_and_granted_share,
-        "% of qualified applicants granted": grant_if_qualified,
-        "% non-qualified granted / non-qualified": grant_if_non_qualified,
-    }
-
-
-def build_group_table(df: pd.DataFrame) -> pd.DataFrame:
-    """Return the fairness metrics as a proper pandas DataFrame."""
-    rows = []
-    for group_name in ["all", "remote", "center"]:
-        subset = df if group_name == "all" else df[df["region_group"] == group_name].copy()
-        row = build_group_stats_row(subset)
-        row["group"] = group_name
-        rows.append(row)
-
-    return pd.DataFrame(rows)[[
-        "group",
-        "% qualified / all",
-        "% granted / all",
-        "% qualified and granted / all",
-        "% of qualified applicants granted",
-        "% non-qualified granted / non-qualified",
-    ]]
-
-
-def print_group_table(df: pd.DataFrame) -> pd.DataFrame:
-    """Print the fairness metrics as a compact pandas-style table."""
-    table = build_group_table(df)
-    print(table.to_string(index=False, formatters={
-        "% qualified / all": lambda x: f"{x:.1f}%",
-        "% granted / all": lambda x: f"{x:.1f}%",
-        "% qualified and granted / all": lambda x: f"{x:.1f}%",
-        "% of qualified applicants granted": lambda x: f"{x:.1f}%",
-        "% non-qualified granted / non-qualified": lambda x: f"{x:.1f}%",
-    }))
-    print()
-    print("This table includes: qualified/all, granted/all, granted/qualified")
-    return table
+def audit_table(df: pd.DataFrame, pred_col: str) -> pd.DataFrame:
+    """Summarize qualification and grant rates overall and by region group."""
+    rows = {}
+    groups = [("All", df), *df.groupby("region_group")]
+    for name, group in groups:
+        qualified = group["qualified_proxy"] == 1
+        rows[name] = {
+            "n": len(group),
+            "% qualified": 100 * qualified.mean(),
+            "% granted": 100 * group[pred_col].mean(),
+            "% qualified who got it": 100 * group.loc[qualified, pred_col].mean(),
+            "% unqualified who got it": 100 * group.loc[~qualified, pred_col].mean(),
+        }
+    return pd.DataFrame(rows).T.round(2)
 
 
 def save_confusion_plot(matrix: pd.DataFrame, title: str, save_path: Path) -> None:
@@ -136,9 +90,10 @@ def generate_all_confusion_plots() -> None:
     output_dir.mkdir(exist_ok=True)
 
     df = ensure_region_group(pd.read_csv(data_path))
-    table = print_group_table(df)
+    table = audit_table(df, "decision_octroi")
+    print(table)
     table_path = output_dir / "fairness_metrics.csv"
-    table.to_csv(table_path, index=False)
+    table.to_csv(table_path, index=True, index_label="group")
     print(f"Saved: {table_path}")
     print()
 

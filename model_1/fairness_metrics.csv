@@ -1,4 +1,4 @@
-group,% qualified / all,% granted / all,% qualified and granted / all,% of qualified applicants granted,% non-qualified granted / non-qualified
-all,95.23,39.94,39.78,41.77255066680668,3.3542976939203357
-remote,97.75,27.3,27.3,27.92838874680307,0.0
-center,93.55,48.36666666666667,48.1,51.41635489043293,4.1343669250646
+group,n,% qualified,% granted,% qualified who got it,% unqualified who got it
+All,10000.0,40.0,39.94,78.55,14.2
+center,6000.0,39.08,48.37,90.87,21.09
+remote,4000.0,41.38,27.3,61.09,3.45

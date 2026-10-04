@@ -43,13 +43,14 @@ def build_proxy_quality(
     out["score_hours"] = minmax_scale(out["heures_travail_semaine"])
 
     # Weighted composite score inside [0, 1]
-    # R-score gets double weight, hours and income each get single weight
+    # R-score gets weight 3; income and hours each get weight 0.5
     out["proxy_quality_score"] = (
-        2 * out["score_r"] + out["score_income"] + out["score_hours"]
+        3 * out["score_r"] + 0.5 * out["score_income"] + 0.5 * out["score_hours"]
     ) / 4
 
-    # Binary proxy for convenience in analysis
-    out["qualified_proxy"] = (out["proxy_quality_score"] >= 0.4).astype(int)
+    # Qualify approximately the top 40% of applicants by proxy score
+    cut = out["proxy_quality_score"].quantile(0.60)
+    out["qualified_proxy"] = (out["proxy_quality_score"] >= cut).astype(int)
 
     # Derived fairness grouping used in the audit: center vs remote
     out["region_group"] = out["region_administrative"].apply(
@@ -68,15 +69,18 @@ def build_proxy_quality(
 
 
 def generate_quality_dataset() -> pd.DataFrame:
-    """Read the raw dataset and save the proxy-quality version in the project root."""
-    project_root = Path(__file__).resolve().parent.parent
-    raw_path = project_root / "equialgo-participants" / "data" / "donnees_demandes.csv"
+    """Read the repository dataset and save the enriched CSV under model_1."""
+    model_dir = Path(__file__).resolve().parent.parent
+    repository_root = model_dir.parent
+    raw_path = repository_root / "equialgo-participants" / "data" / "donnees_demandes.csv"
     out = build_proxy_quality(
         pd.read_csv(raw_path),
-        save_path=str(project_root),
+        save_path=str(model_dir),
         save_name="data_with_quality.csv",
     )
-    print(f"Created dataset: {project_root / 'data_with_quality.csv'}")
+    print(f"Created dataset: {model_dir / 'data_with_quality.csv'}")
+    print("Qualified share by region:")
+    print(out.groupby("region_group")["qualified_proxy"].mean())
     return out
 
 
