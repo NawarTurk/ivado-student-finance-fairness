@@ -1,0 +1,128 @@
+columns,n,auc
+"cote_r_equivalent, revenu_familial_estime, premiere_generation_universitaire, code_postal_3",4,1.0
+"heures_travail_semaine, premiere_generation_universitaire, programme_etudes, code_postal_3",4,1.0
+"premiere_generation_universitaire, programme_etudes, code_postal_3",3,1.0
+"premiere_generation_universitaire, code_postal_3",2,1.0
+"programme_etudes, code_postal_3",2,1.0
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, programme_etudes, code_postal_3",5,1.0
+"heures_travail_semaine, programme_etudes, code_postal_3",3,1.0
+"heures_travail_semaine, premiere_generation_universitaire, code_postal_3",3,1.0
+"cote_r_equivalent, revenu_familial_estime, code_postal_3",3,1.0
+"revenu_familial_estime, programme_etudes, code_postal_3",3,1.0
+"heures_travail_semaine, code_postal_3",2,1.0
+"cote_r_equivalent, heures_travail_semaine, code_postal_3",3,1.0
+"revenu_familial_estime, premiere_generation_universitaire, programme_etudes, code_postal_3",4,1.0
+"revenu_familial_estime, premiere_generation_universitaire, code_postal_3",3,1.0
+"cote_r_equivalent, premiere_generation_universitaire, programme_etudes, code_postal_3",4,1.0
+"revenu_familial_estime, heures_travail_semaine, code_postal_3",3,1.0
+"cote_r_equivalent, premiere_generation_universitaire, code_postal_3",3,1.0
+"cote_r_equivalent, programme_etudes, code_postal_3",3,1.0
+"revenu_familial_estime, heures_travail_semaine, premiere_generation_universitaire, code_postal_3",4,1.0
+"cote_r_equivalent, revenu_familial_estime, premiere_generation_universitaire, programme_etudes, code_postal_3",5,1.0
+"revenu_familial_estime, heures_travail_semaine, programme_etudes, code_postal_3",4,1.0
+"cote_r_equivalent, code_postal_3",2,1.0
+"cote_r_equivalent, heures_travail_semaine, programme_etudes, code_postal_3",4,1.0
+"cote_r_equivalent, revenu_familial_estime, programme_etudes, code_postal_3",4,1.0
+"revenu_familial_estime, code_postal_3",2,1.0
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, premiere_generation_universitaire, programme_etudes, code_postal_3",6,1.0
+"cote_r_equivalent, heures_travail_semaine, premiere_generation_universitaire, programme_etudes, code_postal_3",5,1.0
+"cote_r_equivalent, heures_travail_semaine, premiere_generation_universitaire, code_postal_3",4,1.0
+code_postal_3,1,1.0
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, code_postal_3",4,1.0
+"revenu_familial_estime, heures_travail_semaine, premiere_generation_universitaire, programme_etudes, code_postal_3",5,1.0
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, premiere_generation_universitaire, code_postal_3",5,1.0
+"distance_domicile_campus_km, programme_etudes, code_postal_3",3,0.9999
+"cote_r_equivalent, heures_travail_semaine, distance_domicile_campus_km, programme_etudes, code_postal_3",5,0.9999
+"heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire, code_postal_3",4,0.9999
+"cote_r_equivalent, heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire, code_postal_3",5,0.9999
+"cote_r_equivalent, revenu_familial_estime, distance_domicile_campus_km, programme_etudes, code_postal_3",5,0.9999
+"heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes, code_postal_3",5,0.9999
+"revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire, code_postal_3",5,0.9999
+"cote_r_equivalent, heures_travail_semaine, distance_domicile_campus_km, code_postal_3",4,0.9999
+"revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes, code_postal_3",6,0.9999
+"cote_r_equivalent, heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes, code_postal_3",6,0.9999
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire, code_postal_3",6,0.9999
+"revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, programme_etudes, code_postal_3",5,0.9999
+"heures_travail_semaine, distance_domicile_campus_km, programme_etudes, code_postal_3",4,0.9999
+"revenu_familial_estime, distance_domicile_campus_km, premiere_generation_universitaire, code_postal_3",4,0.9999
+"cote_r_equivalent, revenu_familial_estime, distance_domicile_campus_km, premiere_generation_universitaire, code_postal_3",5,0.9999
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes, code_postal_3",7,0.9998
+"revenu_familial_estime, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes, code_postal_3",5,0.9998
+"revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, code_postal_3",4,0.9998
+"cote_r_equivalent, revenu_familial_estime, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes, code_postal_3",6,0.9998
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, programme_etudes, code_postal_3",6,0.9998
+"cote_r_equivalent, revenu_familial_estime, distance_domicile_campus_km, code_postal_3",4,0.9998
+"heures_travail_semaine, distance_domicile_campus_km, code_postal_3",3,0.9998
+"distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes, code_postal_3",4,0.9998
+"cote_r_equivalent, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes, code_postal_3",5,0.9998
+"cote_r_equivalent, distance_domicile_campus_km, premiere_generation_universitaire, code_postal_3",4,0.9998
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, code_postal_3",5,0.9998
+"distance_domicile_campus_km, premiere_generation_universitaire, code_postal_3",3,0.9998
+"cote_r_equivalent, distance_domicile_campus_km, programme_etudes, code_postal_3",4,0.9998
+"revenu_familial_estime, distance_domicile_campus_km, code_postal_3",3,0.9998
+"revenu_familial_estime, distance_domicile_campus_km, programme_etudes, code_postal_3",4,0.9998
+"distance_domicile_campus_km, code_postal_3",2,0.9998
+"cote_r_equivalent, distance_domicile_campus_km, code_postal_3",3,0.9998
+"heures_travail_semaine, distance_domicile_campus_km",2,0.999
+"heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire",3,0.9989
+"distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes",3,0.9988
+"heures_travail_semaine, distance_domicile_campus_km, programme_etudes",3,0.9987
+"revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire",4,0.9987
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km",4,0.9986
+"revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km",3,0.9986
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire",5,0.9985
+"revenu_familial_estime, distance_domicile_campus_km",2,0.9985
+"cote_r_equivalent, heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire",4,0.9985
+"cote_r_equivalent, revenu_familial_estime, distance_domicile_campus_km, premiere_generation_universitaire",4,0.9985
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, programme_etudes",5,0.9984
+"revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes",5,0.9984
+"cote_r_equivalent, revenu_familial_estime, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes",5,0.9983
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes",6,0.9983
+"heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes",4,0.9983
+"revenu_familial_estime, distance_domicile_campus_km, premiere_generation_universitaire",3,0.9983
+"distance_domicile_campus_km, programme_etudes",2,0.9982
+"revenu_familial_estime, heures_travail_semaine, distance_domicile_campus_km, programme_etudes",4,0.9982
+"cote_r_equivalent, heures_travail_semaine, distance_domicile_campus_km",3,0.9982
+"revenu_familial_estime, distance_domicile_campus_km, programme_etudes",3,0.9981
+"cote_r_equivalent, revenu_familial_estime, distance_domicile_campus_km",3,0.9981
+"cote_r_equivalent, heures_travail_semaine, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes",5,0.9981
+"distance_domicile_campus_km, premiere_generation_universitaire",2,0.9981
+"cote_r_equivalent, distance_domicile_campus_km",2,0.998
+"cote_r_equivalent, distance_domicile_campus_km, premiere_generation_universitaire",3,0.9979
+"revenu_familial_estime, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes",4,0.9979
+distance_domicile_campus_km,1,0.9979
+"cote_r_equivalent, revenu_familial_estime, distance_domicile_campus_km, programme_etudes",4,0.9978
+"cote_r_equivalent, distance_domicile_campus_km, premiere_generation_universitaire, programme_etudes",4,0.9976
+"cote_r_equivalent, heures_travail_semaine, distance_domicile_campus_km, programme_etudes",4,0.9976
+"cote_r_equivalent, distance_domicile_campus_km, programme_etudes",3,0.9974
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, premiere_generation_universitaire, programme_etudes",5,0.8414
+"revenu_familial_estime, heures_travail_semaine, premiere_generation_universitaire, programme_etudes",4,0.8388
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, premiere_generation_universitaire",4,0.837
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, programme_etudes",4,0.8335
+"revenu_familial_estime, heures_travail_semaine, programme_etudes",3,0.8319
+"revenu_familial_estime, heures_travail_semaine, premiere_generation_universitaire",3,0.8314
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine",3,0.8298
+"revenu_familial_estime, heures_travail_semaine",2,0.8249
+"heures_travail_semaine, premiere_generation_universitaire, programme_etudes",3,0.811
+"cote_r_equivalent, heures_travail_semaine, premiere_generation_universitaire, programme_etudes",4,0.8106
+"heures_travail_semaine, premiere_generation_universitaire",2,0.8093
+"heures_travail_semaine, programme_etudes",2,0.8049
+"cote_r_equivalent, heures_travail_semaine, premiere_generation_universitaire",3,0.8034
+heures_travail_semaine,1,0.8015
+"cote_r_equivalent, heures_travail_semaine, programme_etudes",3,0.8003
+"cote_r_equivalent, heures_travail_semaine",2,0.7965
+"cote_r_equivalent, revenu_familial_estime, premiere_generation_universitaire, programme_etudes",4,0.714
+"cote_r_equivalent, revenu_familial_estime, premiere_generation_universitaire",3,0.7026
+"revenu_familial_estime, premiere_generation_universitaire, programme_etudes",3,0.6976
+"cote_r_equivalent, revenu_familial_estime, programme_etudes",3,0.6968
+"revenu_familial_estime, premiere_generation_universitaire",2,0.6925
+"revenu_familial_estime, programme_etudes",2,0.6825
+"cote_r_equivalent, revenu_familial_estime",2,0.6813
+revenu_familial_estime,1,0.6688
+"premiere_generation_universitaire, programme_etudes",2,0.6123
+"cote_r_equivalent, premiere_generation_universitaire, programme_etudes",3,0.5967
+premiere_generation_universitaire,1,0.5831
+"cote_r_equivalent, premiere_generation_universitaire",2,0.5724
+programme_etudes,1,0.5567
+"cote_r_equivalent, programme_etudes",2,0.5389
+cote_r_equivalent,1,0.5139

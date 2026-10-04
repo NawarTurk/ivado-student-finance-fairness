@@ -1,0 +1,4 @@
+removed,n_removed,auc_left
+"code_postal_3, distance_domicile_campus_km",2,0.8414
+"code_postal_3, distance_domicile_campus_km, revenu_familial_estime",3,0.8106
+"code_postal_3, distance_domicile_campus_km, revenu_familial_estime, heures_travail_semaine",4,0.5967

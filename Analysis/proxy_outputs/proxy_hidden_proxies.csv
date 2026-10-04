@@ -1,0 +1,6 @@
+columns,n,auc
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, premiere_generation_universitaire, programme_etudes",5,0.8414
+"revenu_familial_estime, heures_travail_semaine, premiere_generation_universitaire, programme_etudes",4,0.8388
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, premiere_generation_universitaire",4,0.837
+"cote_r_equivalent, revenu_familial_estime, heures_travail_semaine, programme_etudes",4,0.8335
+"revenu_familial_estime, heures_travail_semaine, programme_etudes",3,0.8319

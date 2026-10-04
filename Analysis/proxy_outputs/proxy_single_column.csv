@@ -1,0 +1,8 @@
+column,auc,strength
+code_postal_3,1.0,near-perfect proxy
+distance_domicile_campus_km,0.9979,near-perfect proxy
+heures_travail_semaine,0.8015,strong proxy
+revenu_familial_estime,0.6688,moderate proxy
+premiere_generation_universitaire,0.5831,weak / not a proxy
+programme_etudes,0.5567,weak / not a proxy
+cote_r_equivalent,0.5139,weak / not a proxy

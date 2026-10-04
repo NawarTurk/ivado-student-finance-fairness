@@ -1,0 +1,6 @@
+columns,n,auc
+"cote_r_equivalent, premiere_generation_universitaire, programme_etudes",3,0.5967
+"cote_r_equivalent, programme_etudes",2,0.5389
+"cote_r_equivalent, premiere_generation_universitaire",2,0.5724
+cote_r_equivalent,1,0.5139
+programme_etudes,1,0.5567

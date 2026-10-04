@@ -1,0 +1,9 @@
+column,auc,auc_drop
+ALL columns,0.9998,0.0
+without cote_r_equivalent,0.9999,-0.0
+without revenu_familial_estime,0.9999,-0.0
+without heures_travail_semaine,0.9998,0.0
+without distance_domicile_campus_km,1.0,-0.0002
+without premiere_generation_universitaire,0.9998,0.0
+without programme_etudes,0.9999,-0.0
+without code_postal_3,0.9983,0.0015
